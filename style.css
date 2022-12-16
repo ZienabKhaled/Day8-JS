@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(66, 166, 111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    background-color: #fff;
+}
+form{
+    padding: 250px;
+    gap: 30px;
+}
+input{
+    padding: 15px;
+    width: 250px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    background-color: rgb(223, 217, 217) ;
+}
+.button {
+
+    width: 290px;
+    color: antiquewhite;
+    background-color: rgb(16, 123, 64);
+}
+input:valid{
+    border: 7px solid green;
+  
+  
+}
+input:invalid{
+    border: 7px solid rgb(90, 6, 6);
+   
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="style.css"
+    
+</head>
+<body>
+    <center>
+        <div>
+        <form id ="aa">
+            <input type="text" id="name" pattern="[a-zA-Z]+" placeholder="username"><br>
+            <input type="password" id="pass" pattern= "[0-9]+" placeholder="Password"><br><br>
+            <input class ="button" type="submit" onclick="inputs()" value="LOGIN" >
+            <p>Nor registerd? <a href="#" style="color:green;">Create an account</a> </p>
+
+          </form> 
+        </div>
+    <script>
+    //    document.getElementsById("aa").addEventListener("submit",inputs);
+      function  inputs () {
+            var user = document.getElementById("name").value;
+            var pass = document.getElementById("pass").value;
+            if (user=="admin" && pass==123){
+                document.write("welcome "+ user);
+            }
+            else {
+                document.write(" Not registered");
+            }
+       }
+    </script>
+    </center>
+</body>
+</html>
